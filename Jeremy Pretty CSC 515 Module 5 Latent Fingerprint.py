@@ -35,6 +35,7 @@ cv2.imshow("Original", image)
 cv2.imshow("Dilated", dilated)
 cv2.imshow("Eroded", eroded)
 cv2.waitKey(0)
+
 # Display the enhanced fingerprint image
 cv2.imshow("Enhanced Fingerprint", closing)
 cv2.waitKey(0)
