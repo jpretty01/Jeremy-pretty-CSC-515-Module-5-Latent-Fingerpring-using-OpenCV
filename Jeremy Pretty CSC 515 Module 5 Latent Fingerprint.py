@@ -4,6 +4,7 @@ import cv2
 import os
 
 
+
 fingerprint = os.path.join(os.path.dirname(__file__), 'fingerprint.jpeg')
 
 # Load the input image
@@ -34,6 +35,8 @@ closing = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
 cv2.imshow("Original", image)
 cv2.imshow("Dilated", dilated)
 cv2.imshow("Eroded", eroded)
+cv2.imshow("Opened", opening)
+cv2.imshow("Closed", closing)
 cv2.waitKey(0)
 
 # Display the enhanced fingerprint image
